@@ -10,19 +10,19 @@
 <body>
     <ol>
         <li>
-            Url path contains '.' &nbsp; <a href="./test.test.html">link to test.test.html</a>
+            Url sub directory contains '.' with default document (index.html). 200 &nbsp; <a href="./dot.dir/index.html">link to dot.dir/index.html</a>
         </li>
         <li>
-            Url sub directory contains '.' &nbsp; <a href="./dot.dir/index.html">link to dot.dir/index.html</a>
+            Url sub directory contains '.' without default document (index.html). 404 &nbsp; <a href="./dot.dir/">link to dot.dir/</a>
         </li>
         <li>
-            Url path contains ' '(space) &nbsp; <a href="./test space test.html">link to test space test.html</a>
+            Url path contains ' '(space). 404 &nbsp; <a href="./test space test.html">link to test space test.html</a>
         </li>
         <li>
-            Url path contains Japanese chars. &nbsp; <a href="./日本語試験.html">link to 日本語試験.html</a>
+            Url path contains Japanese chars. 404 &nbsp; <a href="./日本語試験.html">link to 日本語試験.html</a>
         </li>
         <li>
-            Url path contains Japanese chars with url encode. &nbsp; <a href="./%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A9%A6%E9%A8%93.html">link to 日本語試験.html with url encode</a>
+            Url path contains Japanese chars with url encode. 404 &nbsp; <a href="./%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A9%A6%E9%A8%93.html">link to 日本語試験.html with url encode</a>
         </li>
     </ol>
 
